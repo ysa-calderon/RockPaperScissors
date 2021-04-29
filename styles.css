@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
+
+* { /* common first code */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #292C34;
+}
+
+header {
+    background: white;
+    padding: 20px;
+}
+
+header > h1 {
+    color:#292C34;
+    text-align: center;
+    font-family: Asap, sans-serif;
+}
+
+.score-board {
+    margin: 20px auto; /* first (20px) is the top and bottom auto centers the text */
+    border: 3px solid white;
+    border-radius: 4px; /*how curved the edges of the box is*/
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-size: 40px;
+    padding: 15px 20px; /* padding is inside the box margin is outside */
+    font-family: Asap, sans-serif;
+    position: relative;
+}
+
+.badge {
+    background: #E2584D; /* color behind text */
+    color: white; /*color of text*/
+    font-size: 14px; /*size of text*/
+    padding: 2px 10px; /*amt of space from top and bottom, then left and right*/
+    font-family: Asap, sans-serif;
+}
+
+#user-label /*call id*/{
+    position: absolute; /* positioned relative to its parent (scoreboard) */
+    top: 30px;
+    left: -25px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+.result {
+    font-size: 40px;
+    color: white;
+}
+
+.result > p {
+    text-align: center;
+    font-weight: bold;
+    font-family: Asap, sans-serif;
+}
+
+.choices {
+    margin: 50px 0 20px 0;
+    text-align: center;
+}
+
+.choice {
+    border: 4px solid white;
+    border-radius: 50%;
+    margin: 0 20px; /* space between the rock paper and scissors*/
+    padding: 10px;
+    display: inline-block; /* makes it horizontal */
+    transition: all 0.3s ease; /* makes it so that the hover is less abrupt */
+}
+
+.choice > img {
+    width: 90px;
+    height: 90px;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background: #24272E;
+
+}
+
+#action-message {
+    text-align: center;
+    font-family: Asap, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.green-glow {
+    border: 4px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a; /* horizontal, vertical offset, blur, color */
+}
+
+.red-glow {
+    border: 4px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow {
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b; /* gives glow effect */
+}
