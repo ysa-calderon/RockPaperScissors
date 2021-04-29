@@ -1,2 +1,2 @@
 # RockPaperScissors
-Fully functioning Rock Paper Scissors website. https://www.youtube.com/watch?v=jaVNP3nIAv0
+HTML, CSS, and JacaScript tutorial via https://www.youtube.com/watch?v=jaVNP3nIAv0
