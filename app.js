@@ -29,7 +29,7 @@ function win(user, computer) {
     userScore++;
     userScore_span.innerHTML = userScore; // updates scoreboard
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = `${convertToWord(user)}${smallUserWord} beats ${convertToWord(computer)}${smallCompWord}. You win! 👉👌`; // converts everything to a string ${} = converts function to string
+    result_p.innerHTML = `${convertToWord(user)}${smallUserWord} beats ${convertToWord(computer)}${smallCompWord}. You win! 👌`; // converts everything to a string ${} = converts function to string
     userChoice_div.classList.add('green-glow');
     setTimeout(function() {userChoice_div.classList.remove('green-glow')}, 300); // removes class after, sec
 }
